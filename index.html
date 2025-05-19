@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header-section">
+            <!-- Header Section -->
+            <div class="header-logo">
+                <img src="./images/Screenshot 2025-04-22 111014.png"
+                alt="SBI Logo" style="width: 100px; height: auto;" 
+                id="sbi-logo">
+            </div>
+            <div class="header-title">
+                <span>State Bank of India</span>
+            </div>
+        </div>
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%;">
+            <tr>
+                <th rowspan="4">Account Number</th>
+                <td>Please open your NRI Account at your <input type="text" placeholder="Branch Name"></td>
+            </tr>
+            <tr>
+                <td>Customer Information <input type="text" placeholder="Customer Info"></td>
+            </tr> 
+            <tr>
+                <td>Individual Details   
+                    <label for="first-name">First Name:</label> <input type="text" id="first-name"> 
+                    <label for="last-name">Last Name:</label> <input type="text" id="last-name">
+                    <label for="surname">Surname:</label> <input type="text" id="surname">
+                </td>
+            </tr>
+            <tr>
+                <td>1st Applicant Mr./Mrs./Ms. <input type="text" placeholder="Applicant 1"> <br>
+                2nd Applicant Mr./Mrs./Ms. <input type="text" placeholder="Applicant 2"><br>
+                3rd Applicant Mr./Mrs./Ms. <input type="text" placeholder="Applicant 3"></td>
+            </tr>
+            <tr>
+                <th rowspan="3">ALL APPLICANTS SHOULD BE NRI's</th>
+                <td>1st Applicant <input type="date" name="applicant1-dob" id="applicant1-dob"> 
+                    M/F <input type="text" name="applicant1-gender" id="applicant1-gender" placeholder="Gender">
+                </td>
+            </tr>
+            <tr>
+                <td>2nd Applicant <input type="date" name="applicant2-dob" id="applicant2-dob"> 
+                    M/F <input type="text" name="applicant2-gender" id="applicant2-gender" placeholder="Gender">
+                </td>
+            </tr>
+            <tr>
+                <td>3rd Applicant <input type="date" name="applicant3-dob" id="applicant3-dob"> 
+                    M/F <input type="text" name="applicant3-gender" id="applicant3-gender" placeholder="Gender">
+                </td>
+            </tr>
+            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%;">
+                <tr id="address-row">
+                    <th rowspan="1">Name, Address, and Telephone</th>
+                    <td>
+                        <textarea rows="4" cols="50" placeholder="Enter Name and Address"></textarea>
+                    </td>
+                    <td>
+                        <textarea rows="4" cols="50" placeholder="Enter Telephone"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <!-- <tr> -->
+                <!-- <th>Balance</th> -->
+                <!-- <td>Enter Balance: <input type="text" placeholder="Balance"></td> -->
+            <!-- </tr> -->
+        </table>
+    </div>
+</body>
+</html>
